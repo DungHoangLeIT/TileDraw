@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0e1a24">
+  <title>Xưởng Robot</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="stage">
+    <header id="hud">
+      <button id="levelChip" class="stat stat-btn" type="button" title="Chạm để sang màn tiếp theo (dùng khi demo)">
+        <small>MÀN</small><b id="levelNum">1</b>
+      </button>
+      <div class="stat"><small>Ô CÒN</small><b id="tilesLeft">0</b></div>
+      <div class="stat stat-wide"><small>ROBOT</small><b id="robotProgress">0/6</b></div>
+      <button id="soundBtn" class="icon-btn" type="button" aria-label="Bật hoặc tắt âm thanh"></button>
+      <button id="restartBtn" class="icon-btn" type="button" aria-label="Chơi lại màn này"></button>
+    </header>
+
+    <section id="decor" aria-label="Khu lắp ráp robot">
+      <div id="workshop"></div>
+      <div id="robotMount"></div>
+      <div id="nameplate"></div>
+      <div id="energy" role="img" aria-label="Năng lượng robot">
+        <div class="energy-cap"></div>
+        <div class="energy-cell"><div class="energy-fill"></div><i id="energyIcon"></i></div>
+        <b id="energyText">0/0</b>
+      </div>
+    </section>
+
+    <section id="goals" aria-label="Bộ phận cần thu thập"></section>
+
+    <section id="board" aria-label="Bàn ô"></section>
+    <div id="shelfBar"><span>Kệ tạm</span></div>
+
+    <section id="tray" aria-label="Khay chứa"></section>
+
+    <nav id="boosters" aria-label="Trợ giúp">
+      <button class="booster" id="undoBtn" type="button"><i></i><span>Hoàn tác</span><em></em></button>
+      <button class="booster" id="shuffleBtn" type="button"><i></i><span>Xáo bàn</span><em></em></button>
+      <button class="booster" id="pullBtn" type="button"><i></i><span>Rút ô</span><em></em></button>
+    </nav>
+
+    <div id="tiles"></div>
+    <div id="fx" aria-hidden="true"></div>
+
+    <div id="panel" hidden>
+      <div class="card" role="dialog" aria-modal="true">
+        <h2 id="panelTitle"></h2>
+        <div id="panelBody"></div>
+        <div id="panelActions"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

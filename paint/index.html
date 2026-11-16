@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#16308f">
+  <title>Tô Tranh</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="stage">
+    <header id="hud">
+      <button id="soundBtn" class="icon-btn" type="button" aria-label="Bật hoặc tắt âm thanh"></button>
+      <div class="stat"><small>Thẻ còn</small><b id="tilesLeft">0</b></div>
+      <div class="stat level-nav">
+        <button id="prevBtn" class="nav-btn" type="button" aria-label="Màn phía trước">&#x2039;</button>
+        <span><small>Tranh</small><b id="levelNum">1</b></span>
+        <button id="nextBtn" class="nav-btn" type="button" aria-label="Màn tiếp theo">&#x203A;</button>
+      </div>
+      <div class="stat stat-wide"><small>Đã tô</small><b id="paintProgress">0/0</b></div>
+      <button id="restartBtn" class="icon-btn" type="button" aria-label="Chơi lại tranh này"></button>
+    </header>
+
+    <section id="decor" aria-label="Bức tranh cần tô"><div id="picMount"></div></section>
+
+    <section id="tray" aria-label="Khay chứa"></section>
+
+    <section id="board" aria-label="Board 4x4"></section>
+    <div id="shelfBar"><span>Kệ tạm</span></div>
+
+    <nav id="controls" aria-label="Trợ giúp">
+      <button class="booster" id="undoBtn" type="button"><i></i><span>Hoàn tác</span><em></em></button>
+      <button class="booster" id="shuffleBtn" type="button"><i></i><span>Xáo bàn</span><em></em></button>
+      <button class="booster" id="pullBtn" type="button"><i></i><span>Rút ô</span><em></em></button>
+    </nav>
+
+    <div id="tiles"></div>
+    <div id="hooks" aria-hidden="true"></div>
+    <div id="gates" aria-hidden="true"></div>
+    <div id="fx" aria-hidden="true"></div>
+
+    <div id="panel" hidden>
+      <div class="card" role="dialog" aria-modal="true">
+        <h2 id="panelTitle"></h2>
+        <div id="panelBody"></div>
+        <div id="panelActions"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

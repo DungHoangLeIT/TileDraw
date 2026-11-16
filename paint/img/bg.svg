@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c3fae"/><stop offset="1" stop-color="#3a63c9"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c98a52"/><stop offset="1" stop-color="#8f5a30"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9763f"/><stop offset="1" stop-color="#7d4a22"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".3" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.6"/></filter>
+  </defs>
+  <rect width="360" height="640" fill="url(#wall)"/>
+  <g filter="url(#soft)">
+    <!-- ốp tường -->
+    <rect y="60" width="360" height="6" fill="#f2c14a" opacity=".5"/>
+    <rect x="150" y="70" width="70" height="330" fill="#2a4fb8" opacity=".6"/>
+    <!-- kệ đồ chơi bên trái -->
+    <rect x="-10" y="60" width="78" height="420" fill="url(#wood)"/>
+    <rect x="-10" y="150" width="84" height="9" fill="#d99a5b"/>
+    <rect x="-10" y="262" width="84" height="9" fill="#d99a5b"/>
+    <rect x="-10" y="372" width="84" height="9" fill="#d99a5b"/>
+    <!-- lâu đài -->
+    <rect x="4" y="112" width="14" height="38" fill="#f1e4c8"/><path d="M1 112l10-20 10 20z" fill="#d63a3a"/>
+    <rect x="24" y="122" width="12" height="28" fill="#f1e4c8"/><path d="M21 122l9-16 9 16z" fill="#d63a3a"/>
+    <!-- lính chì -->
+    <rect x="26" y="196" width="20" height="14" rx="4" fill="#d63a3a"/><circle cx="36" cy="218" r="9" fill="#f6c9a0"/>
+    <rect x="25" y="227" width="22" height="26" rx="5" fill="#d63a3a"/><rect x="28" y="250" width="16" height="12" fill="#1f3d9c"/>
+    <path d="M27 196l9-9 9 9z" fill="#f2c14a"/>
+    <!-- gấu bông -->
+    <circle cx="26" cy="318" r="15" fill="#c98a52"/><circle cx="14" cy="304" r="6" fill="#c98a52"/><circle cx="38" cy="304" r="6" fill="#c98a52"/>
+    <ellipse cx="26" cy="350" rx="18" ry="20" fill="#b9763f"/><path d="M14 300l5-10 7 7 7-7 5 10z" fill="#f2c14a"/>
+    <path d="M18 334l8 5 8-5v10l-8-4-8 4z" fill="#d63a3a"/>
+    <!-- sách -->
+    <rect x="-4" y="388" width="60" height="10" fill="#27489f"/><rect x="0" y="398" width="60" height="9" fill="#d63a3a"/><rect x="-6" y="407" width="70" height="10" fill="#f2c14a"/>
+    <!-- tranh thuyền bên phải -->
+    <rect x="300" y="90" width="80" height="104" fill="#f2c14a"/><rect x="308" y="98" width="70" height="88" fill="#f1dfb8"/>
+    <path d="M320 160h46l-8 12h-30z" fill="#9a5a2c"/><path d="M340 108v50h-20z" fill="#e9c9a0"/><path d="M343 116v42h18z" fill="#d99a5b"/>
+    <path d="M308 176q10-6 20 0t20 0 20 0 10 0v10h-70z" fill="#3f78c9"/>
+    <!-- bàn, lọ cọ, hộp quà -->
+    <rect x="296" y="290" width="80" height="12" fill="#d99a5b"/><rect x="304" y="302" width="12" height="150" fill="url(#wood)"/>
+    <rect x="322" y="244" width="24" height="46" rx="8" fill="#efe2c6"/>
+    <path d="M326 244l-4-30M334 244v-36M342 244l5-30" stroke="#8f5a30" stroke-width="4" stroke-linecap="round"/>
+    <rect x="336" y="264" width="40" height="28" fill="#d63a3a"/><rect x="336" y="258" width="40" height="8" fill="#27489f"/>
+    <path d="M350 276l4-6 4 4 4-4 4 6z" fill="#f2c14a"/>
+    <!-- sàn và thảm -->
+    <rect y="452" width="360" height="188" fill="url(#floor)"/>
+    <path d="M0 470h360M0 500h360M0 540h360M0 590h360" stroke="#7d4a22" stroke-width="1.5" opacity=".5"/>
+    <path d="M-40 640L40 500h280l80 140z" fill="#b3262e"/>
+    <path d="M-12 640L56 514h248l68 126" fill="none" stroke="#f2c14a" stroke-width="5" opacity=".75"/>
+    <path d="M30 640L84 532h192l54 108" fill="none" stroke="#27489f" stroke-width="7" opacity=".7"/>
+  </g>
+  <rect width="360" height="640" fill="url(#glow)"/>
+</svg>
